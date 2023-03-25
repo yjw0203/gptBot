@@ -52,7 +52,7 @@ async def pdfTransform(fileName,session):
 
 async def transform(text):
     try:
-        text = '\'' + text + '\' 翻译成中文,不要复述原话'
+        text = '\'' + text + '\' 翻译成中文'
         completion = openai.ChatCompletion.create(
                 model="gpt-3.5-turbo", 
                 messages=[{"role": "system", "content": text}],
