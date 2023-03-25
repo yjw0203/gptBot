@@ -3,7 +3,9 @@ import nonebot
 from os import path
 
 import nonebot
+import openai
 
+openai.api_key = "********************"
 import config
 
 if __name__ == '__main__':

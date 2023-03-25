@@ -3,8 +3,6 @@ from nonebot import on_natural_language, NLPSession, IntentCommand
 
 import openai
 
-# Load your API key from an environment variable or secret management service
-openai.api_key = "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"#os.getenv("OPENAI_API_KEY")
 
 def chat_gpt(messages):
     # 你的问题
@@ -110,7 +108,6 @@ async def list(session: CommandSession):
             await session.send('历史记录为空')
         else :
             await session.send(history[uid])
-        
 
 def getUID(session: CommandSession):
     if session.event.type == 'message' :
