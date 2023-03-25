@@ -1,0 +1,4 @@
+data/
+logs/
+device.json
+**/__pycache__/*
